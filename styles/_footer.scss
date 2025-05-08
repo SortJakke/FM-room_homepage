@@ -1,0 +1,13 @@
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.attribution a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(228, 45%, 44%);
+  &:focus {
+    border-bottom: 2px solid hsl(228, 45%, 44%);
+  }
+}

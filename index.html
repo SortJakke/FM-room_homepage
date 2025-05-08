@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Frontend Mentor | Room homepage</title>
+
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="open navigation"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <a href="#" class="logo"> room </a>
+      <div class="overlay"></div>
+      <nav class="nav" id="menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">shop</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article
+        class="hero"
+        aria-roledescription="carousel"
+        aria-label="Carousel Section"
+        id="carousel-section"
+        aria-live="off"
+      >
+        <div class="carousel__buttons">
+          <button
+            class="prev-button"
+            type="button"
+            aria-controls="carousel-section"
+            aria-label="Previous Slide"
+          ></button>
+          <button
+            class="next-button"
+            type="button"
+            aria-controls="carousel-section"
+            aria-label="Next Slide"
+          ></button>
+        </div>
+        <div class="hero__item active">
+          <picture class="hero__picture">
+            <source
+              srcset="images/desktop/hero-1.jpg"
+              media="(min-width: 900px)"
+            />
+            <img
+              src="images/mobile/hero-1.jpg"
+              alt="Light wooden table with a bonsai plant, accompanied by two modern white chairs."
+              class="hero__image"
+            />
+          </picture>
+          <div class="hero__text">
+            <h1 class="hero__title">Discover innovative ways to decorate</h1>
+            <p class="hero__paragraph">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <button type="button" class="hero__shop">shop now</button>
+          </div>
+        </div>
+        <div class="hero__item">
+          <picture class="hero__picture">
+            <source
+              srcset="images/desktop/hero-2.jpg"
+              media="(min-width: 900px)"
+            />
+            <img
+              src="images/mobile/hero-2.jpg"
+              alt="Set of modern chairs in yellow, light green, and white, arranged in a neutral space."
+              class="hero__image"
+            />
+          </picture>
+          <div class="hero__text">
+            <h1 class="hero__title">We are available all across the globe</h1>
+            <p class="hero__paragraph">
+              With stores all over the world, it's easy for you to find
+              furniture for your home or place of business. Locally, we’re in
+              most major cities throughout the country. Find the branch nearest
+              you using our store locator. Any questions? Don't hesitate to
+              contact us today.
+            </p>
+            <button type="button" class="hero__shop">shop now</button>
+          </div>
+        </div>
+        <div class="hero__item">
+          <picture class="hero__picture">
+            <source
+              srcset="images/desktop/hero-3.jpg"
+              media="(min-width: 900px)"
+            />
+            <img
+              src="images/mobile/hero-3.jpg"
+              alt="Black folding chair with simple padding, displayed in a dark setting."
+              class="hero__image"
+            />
+          </picture>
+          <div class="hero__text">
+            <h1 class="hero__title">Manufactured with the best materials</h1>
+            <p class="hero__paragraph">
+              Our modern furniture store provide a high level of quality. Our
+              company has invested in advanced technology to ensure that every
+              product is made as perfect and as consistent as possible. With
+              three decades of experience in this industry, we understand what
+              customers want for their home and office.
+            </p>
+            <button type="button" class="hero__shop">shop now</button>
+          </div>
+        </div>
+      </article>
+      <article class="about">
+        <figure class="about__figure about__dark">
+          <img
+            src="./images/image-about-dark.jpg"
+            alt="Living room setting with two black armchairs and a round light wood coffee table, with a bedroom in the background."
+            class="about__image"
+          />
+        </figure>
+        <div class="about__text">
+          <h1 class="about__title">About our furniture</h1>
+          <p class="about__paragraph">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <figure class="about__figure about__light">
+          <img
+            src="./images/image-about-light.jpg"
+            alt="Minimalist white chair highlighted by soft lighting in a bright setting."
+            class="about__image"
+          />
+        </figure>
+      </article>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/SortJakke">Sortjakke</a>.
+    </footer>
+  </body>
+</html>

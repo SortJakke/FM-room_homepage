@@ -1,0 +1,33 @@
+$color--primary: hsl(0, 0%, 100%);
+$color--secundary: hsl(0, 0%, 0%);
+// $color--paragraph: hsl(0, 0%, 63%);
+$color--paragraph: hsl(0, 0%, 45%);
+$color--acent: hsl(0, 0%, 27%);
+$overlay: hsla(0, 0%, 0%, 0.5);
+
+$font-family: 500 16px "League Spartan", sans-serif;
+
+@mixin bottom_bar($bar-color) {
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    margin-left: 25%;
+    width: 0;
+    height: 3px;
+    background-color: $bar-color;
+    border: none;
+    transition: width 0.3s ease;
+  }
+
+  &:focus::after,
+  &:hover::after {
+    width: 50%;
+  }
+}
+
+@mixin paragraph {
+  &__paragraph {
+    line-height: 1.5rem;
+  }
+}

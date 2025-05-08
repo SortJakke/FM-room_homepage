@@ -1,0 +1,48 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color--primary;
+  color: $color--paragraph;
+  font: $font-family;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-scroll {
+  position: fixed;
+  overflow: hidden;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a:link,
+a:visited {
+  color: $color--paragraph;
+  text-decoration: none;
+  outline: none;
+}
+
+@import "./header";
+@import "./hero";
+@import "./about";
+@import "./footer";
